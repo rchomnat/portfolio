@@ -57,7 +57,51 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff; 
+}
+
+.timeline-area{
+  margin: 90px auto;
+  width: 460px;
+  border-left: 2px solid #b1b493;
+  padding: 0 20px 0 30px;
+}
+
+.timeline-box{
+  background-color: #fff;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #b1b493;
+  line-height: 1.7;
+  position: relative;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.timeline-box:before{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #b1b493;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+}
+
+.timeline-box:after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #b1b493 transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -17px;
+  top: 10px;
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
